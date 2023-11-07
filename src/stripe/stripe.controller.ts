@@ -13,11 +13,12 @@ export class StripeController {
   // URL : /stripe/create-user
   @Post('create-user')
   async createUser() {
+    console.log('fuck you ridma');
     const createUserDto: CreateUserDto = {
-      first_name: 'Ridma',
-      last_name: 'Athukorala',
-      email: 'ridma@sonicdevs.com',
-      password: 'R1dm@123@',
+      first_name: 'RidmaK',
+      last_name: 'AthukoralaA',
+      email: 'ridmak@sonicdevs.com',
+      password: 'R1dmk@123@',
     };
 
     const createdUser = await this.stripeService.createUser(createUserDto);
